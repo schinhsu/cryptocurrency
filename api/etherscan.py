@@ -9,7 +9,7 @@ class Etherscan:
         self.url = 'https://api.etherscan.io/api'
         
         #NOTE!!! API limit: 5 requests at a second
-        self.key = '8KNEE6T746I3NPPTFUD8GA8JZF8AMZZABY'
+        self.key = apkikey
 
     def get_txinfo_by_hash(self,txid:str):
         params = {'module':'proxy','action':'eth_getTransactionReceipt',
